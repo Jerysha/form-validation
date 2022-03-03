@@ -1,0 +1,94 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: linear-gradient(90deg, #65997d 10%, #fccb6e 90%);
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+#container{
+    border-radius: 5px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+	overflow: hidden;
+	width: 400px;
+	max-width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    /*box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;*/
+    /*box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;*/
+}
+#tittle h1{
+    background-color: lightgray;
+    text-align: center;
+    padding: 10px;
+}
+#form{
+    padding: 30px 40px;
+    background-color: whitesmoke;
+    margin: 0;
+}
+.form-control{
+	padding-bottom: 10px;
+    position: relative;
+}
+.form-control i{
+    position: absolute;
+    top: 30px;
+	right: 10px;
+    visibility: hidden;
+}
+.form-control small{
+    visibility: hidden;
+}
+label{
+    font-weight: bold;
+    display: block;
+}
+input{
+    padding: 5px;
+    width: 100%;
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+    border: 2px solid gray;
+    border-radius: 2px;
+}
+button{
+    display: block;
+    padding: 10px;
+    width: 100%;
+    background-color: lightgreen;
+    font-size: 1rem;
+    font-weight: bold;
+    border: 1px solid green;
+    border-radius: 3px;
+    margin-top: 5px;
+}
+button:hover{
+    color: white;
+    background-color: green;
+    transition: all .5s ease-in-out;
+    border-color: lightgreen;
+}
+.form-control.success input{
+    border-color: #2ecc71;
+}
+.form-control.success i.fa-check-circle{
+    color: #2ecc71;
+    visibility: visible;
+}
+.form-control.error input{
+    border-color: #e74c3c;
+}
+.form-control.error i.fa-exclamation-circle{
+    color: #e74c3c;
+    visibility: visible;
+}
+.form-control.error small{
+    visibility: visible;
+    color: #e74c3c;
+}
